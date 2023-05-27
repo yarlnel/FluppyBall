@@ -6,4 +6,6 @@
         %1$s!\n\nYou finished that section with %2$d/%3$d score
     </string>
     <string name="go_home">Return to home page</string>
+    <string name="resume_game">Resume game</string>
+    <string name="score_template">Score: %1$d</string>
 </resources>

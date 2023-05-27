@@ -8,3 +8,5 @@ import servolne.cima.R
 infix fun View.onclick(voidLambda: () -> Unit) {
     setOnClickListener { voidLambda.invoke() }
 }
+
+typealias VoidCallback = () -> Unit

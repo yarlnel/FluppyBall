@@ -6,6 +6,7 @@ import com.google.firebase.remoteconfig.ktx.remoteConfig
 import com.google.firebase.remoteconfig.ktx.remoteConfigSettings
 import dagger.android.AndroidInjector
 import dagger.android.DaggerApplication
+import servolne.cima.di.DaggerAppComponent
 
 
 class App : DaggerApplication()  {
@@ -20,7 +21,6 @@ class App : DaggerApplication()  {
 
         Firebase.remoteConfig.setConfigSettingsAsync(configSettings)
     }
-
 
     override fun applicationInjector(): AndroidInjector<out  DaggerApplication> =
         DaggerAppComponent.builder()

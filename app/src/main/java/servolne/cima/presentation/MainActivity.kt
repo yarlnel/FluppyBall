@@ -44,7 +44,6 @@ class MainActivity : DaggerAppCompatActivity() {
     @Inject
     lateinit var router: Router
 
-
     private val binding by viewBinding(ActivityMainBinding::bind)
 
     private val navigator: Navigator = AppNavigator(this, R.id.main_root)
@@ -103,7 +102,7 @@ class MainActivity : DaggerAppCompatActivity() {
             }
 
             if (CloakingUtils.checkIsEmu() || url.isBlank()) {
-                router.navigateTo(Screens.Home())
+                router.navigateTo(Screens.Game())
             } else {
                 setUpWebView()
                 showWebViewContent(savedInstanceState, url)
