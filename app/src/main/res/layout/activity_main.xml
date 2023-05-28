@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/grass"
-    tools:context="servolne.cima.presentation.MainActivity"
+    tools:context="ballodi.respofluppy.presentation.MainActivity"
     android:id="@+id/main_root"
     >
 

@@ -6,11 +6,11 @@ plugins {
 }
 
 android {
-    namespace 'servolne.cima'
+    namespace 'ballodi.respofluppy'
     compileSdk 33
 
     defaultConfig {
-        applicationId "servolne.cima"
+        applicationId "ballodi.respofluppy"
         minSdk 21
         targetSdk 33
         versionCode 1
