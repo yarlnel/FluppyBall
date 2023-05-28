@@ -43,7 +43,7 @@ class FluppyBallGameView @JvmOverloads constructor (
     override fun onTouchEvent(event: MotionEvent): Boolean {
         when (event.action) {
             MotionEvent.ACTION_DOWN -> if (gameData.ball.isAlive) {
-                gameData.deltaY = -20
+                gameData.deltaY = -25
             }
         }
         return true

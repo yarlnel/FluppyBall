@@ -42,10 +42,10 @@ class GameFragment : BaseFragment<FragmentGameBinding>(
 
     override fun onStop() {
         super.onStop()
-        job.complete()
+        job.cancel()
     }
 
     override fun handleBackPress() {
-        ultimateOnBackPressed()
+        requireActivity().finish()
     }
 }
